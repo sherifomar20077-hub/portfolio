@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Terminal, ExternalLink, Heart } from "lucide-react";
+import { Terminal, ExternalLink, Heart, MessageCircle } from "lucide-react";
 
 const footerLinks = [
   { label: "About", href: "#about" },
@@ -41,9 +41,30 @@ export default function Footer() {
                 Ashraf Omar<span className="text-cyan-400">.</span>
               </span>
             </button>
-            <p className="text-gray-600 text-sm max-w-xs leading-relaxed">
-              AI Systems Engineer & Full Stack Developer. Building production-grade intelligent SaaS platforms.
+            <p className="text-gray-600 text-sm max-w-xs leading-relaxed mb-4">
+              Full Stack & AI Student. Building production-grade intelligent SaaS platforms.
             </p>
+            {/* Social Links */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://wa.me/2001065592701?text=%D8%A3%D9%86%D8%A7%20%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D9%85%D9%86%D8%B5%D8%A7%D8%AA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                <MessageCircle size={16} />
+                <span>01065592701</span>
+              </a>
+              <span className="text-gray-700">|</span>
+              <a
+                href="https://www.facebook.com/share/1BPiMZyg7Z/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                Facebook
+              </a>
+            </div>
           </div>
 
           {/* Nav links */}

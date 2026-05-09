@@ -385,3 +385,35 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* RTL Support for Arabic text */
+[dir="rtl"],
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Mixed content (Arabic + English) */
+.mixed-content {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* Better line-height for mixed language content */
+.arabic-text {
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+/* Prevent text overlap in small spaces */
+.no-text-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure proper text baseline alignment */
+.align-baseline-fix {
+  vertical-align: baseline;
+  line-height: 1.6;
+}

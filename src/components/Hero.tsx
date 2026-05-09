@@ -398,8 +398,8 @@ export default function Hero() {
           >
             I'm{" "}
             <span className="text-white font-semibold">Ashraf Omar</span> — a{" "}
-            <span className="text-cyan-400 font-medium">Full Stack & AI Systems Engineer</span>{" "}
-            architecting production-grade, multi-tenant SaaS platforms powered by scalable
+            <span className="text-cyan-400 font-medium">Full Stack & AI Student</span>{" "}
+            learning to architect production-grade, multi-tenant SaaS platforms powered by scalable
             orchestration layers, secure inference pipelines, and role-enforced access boundaries.
           </motion.p>
 
